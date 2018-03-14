@@ -1,0 +1,28 @@
+{
+   "background": {
+      "scripts": ["core/lib/ua.js", "core/lib/utils.js", "core/lib/cache.js", "core/bg.js" ]
+   },
+   "content_scripts": [ {
+      "js": ["core/ready.js", "core/progressbar.js", "core/FileSaver.js", "core/id3-parser.browser.js", "core/browser-id3-writer.js", "core/lib/ua.js", "core/lib/utils.js", "core/lib/cache.js", "core/lib/settings.js", "core/lib/i18n.js", "core/lib/messaging.js", "core/lib/framework.js" ],
+      "matches": [ "*://*/*" ]
+   }, {
+      "css": [ "css/content.css" ],
+      "js": [ "core//spark-md5.js", "core/cs.js" ],
+      "matches": [ "*://ok.ru/*" ]
+   } ],
+   "default_locale": "ru",
+   "description": "__MSG_desc__",
+   "icons": {
+      "512": "img/512.png",
+      "128": "img/128.png",
+      "32": "img/32.png"
+   },
+   "manifest_version": 2,
+   "name": "__MSG_name__",
+   "permissions": [ "tabs", "storage", "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2018.3.14.3",
+   "web_accessible_resources": [ "img/*" ],
+   "author": "Plugtopus Agency",
+   "homepage_url": "https://plugtopus.agency"
+}
